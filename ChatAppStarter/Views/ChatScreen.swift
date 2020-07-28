@@ -12,6 +12,8 @@ struct ChatScreen: View {
   
   @State var newMessageInput = ""
   
+  @ObservedObject var keyboardResponder = KeyboardResponder()
+  
     var body: some View {
       NavigationView {
         VStack {
@@ -40,6 +42,7 @@ struct ChatScreen: View {
               })
             }
           }.frame(height:70)
+          .offset(y:-keyboardResponder.currentHeight)
         }.navigationBarTitle("Chat App")
         
       }
