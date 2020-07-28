@@ -19,6 +19,7 @@
 		45A1E48023487DF90014E6CC /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1E47F23487DF90014E6CC /* MotherView.swift */; };
 		45A1E48423487E1D0014E6CC /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1E48323487E1D0014E6CC /* ChatScreen.swift */; };
 		B6E6F53224D04E7400CF4BC8 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E6F53124D04E7400CF4BC8 /* ChatMessage.swift */; };
+		B6E6F53524D064E800CF4BC8 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E6F53424D064E800CF4BC8 /* ChatRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		45A1E47F23487DF90014E6CC /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		45A1E48323487E1D0014E6CC /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
 		B6E6F53124D04E7400CF4BC8 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		B6E6F53424D064E800CF4BC8 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				45A1E48323487E1D0014E6CC /* ChatScreen.swift */,
 				45A1E47B23487D2F0014E6CC /* LoginScreen.swift */,
+				B6E6F53424D064E800CF4BC8 /* ChatRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E6F53524D064E800CF4BC8 /* ChatRow.swift in Sources */,
 				B6E6F53224D04E7400CF4BC8 /* ChatMessage.swift in Sources */,
 				45A1E47E23487D920014E6CC /* ViewRouter.swift in Sources */,
 				45A1E48423487E1D0014E6CC /* ChatScreen.swift in Sources */,
