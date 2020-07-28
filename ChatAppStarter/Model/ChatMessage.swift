@@ -14,15 +14,14 @@ class ChatMessage {
   let isMe: Bool
   let messageId = UUID()
   
-  init(messageText: String, username: String, isMe: Bool) {
+  init(messageText: String, username: String) {
     self.messageText = messageText
     self.username = username
-    self.isMe = isMe
+    if UserDefaults.standard.string(forKey: "username") == username {
+      self.isMe = true
+    } else {
+      self.isMe = false
+    }
   }
 }
 
-let sampleConversation = [
-  ChatMessage(messageText: "Hello how are you?", username: "Me", isMe: true),
-  ChatMessage(messageText: "I'm fine and you?", username: "Another user", isMe: false),
-  ChatMessage(messageText: "I'm fine as well. Thanks for asking. What are you doing right now?", username: "Me", isMe: true)
-]
