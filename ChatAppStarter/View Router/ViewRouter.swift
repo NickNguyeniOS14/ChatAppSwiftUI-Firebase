@@ -11,16 +11,16 @@ import Combine
 import SwiftUI
 
 class ViewRouter: ObservableObject {
-    
-    let objectWillChange = PassthroughSubject<ViewRouter,Never>()
-    
-    var currentPage: String = "" {
-        didSet {
-            objectWillChange.send(self)
-        }
+  
+  let objectWillChange = PassthroughSubject<ViewRouter,Never>()
+  
+  var currentPage: String = "" {
+    didSet {
+      objectWillChange.send(self)
     }
-    
-    init(pageToStartWith: String) {
-        currentPage = pageToStartWith
-    }
+  }
+  
+  init(pageToStartWith: String) {
+    currentPage = pageToStartWith
+  }
 }
