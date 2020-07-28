@@ -55,7 +55,9 @@ struct ChatScreen: View {
         }.frame(height:70)
         .offset(y:-keyboardResponder.currentHeight)
       }.navigationBarTitle("Chat App")
-      
+      .onAppear {
+        self.chatController.receiveMessages()
+      }
     }
     
   }

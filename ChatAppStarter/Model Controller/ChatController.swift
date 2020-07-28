@@ -23,8 +23,23 @@ class ChatController: ObservableObject {
     newChat.setValue(messageToSend)
     
   }
+  
+  // Observe real time database
+  // “Now every time a message gets added to the database, we try to fetch that message’s data and to retrieve the username and content from it. If the message is not empty (which shouldn’t be the case), we create a new ChatMessage instance out of the retrieved data and append it to our messages array. We then call the send method of our objectWillChange property for telling the ChatScreen view that it should rebuild itself to display the new message.”
+  //
+  
   func receiveMessages() {
-    
+    let query = databaseChats.queryLimited(toLast: 100)
+    _ = query.observe(.childAdded, with: { [weak self] snapshot in
+      if let data = snapshot.value as? [String: String],
+         let retrievedUsername = data["username"],
+         let retrievedMessageText = data["messageText"],
+         !retrievedMessageText.isEmpty {
+        let retrievedMessage = ChatMessage(messageText: retrievedMessageText, username: retrievedUsername)
+        self?.messages.append(retrievedMessage)
+        self?.objectWillChange.send(self!)
+      }
+    })
   }
   
 }
