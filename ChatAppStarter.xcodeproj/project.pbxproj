@@ -20,6 +20,7 @@
 		45A1E48423487E1D0014E6CC /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1E48323487E1D0014E6CC /* ChatScreen.swift */; };
 		B6E6F53224D04E7400CF4BC8 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E6F53124D04E7400CF4BC8 /* ChatMessage.swift */; };
 		B6E6F53524D064E800CF4BC8 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E6F53424D064E800CF4BC8 /* ChatRow.swift */; };
+		B6E6F53724D0692700CF4BC8 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E6F53624D0692700CF4BC8 /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		45A1E48323487E1D0014E6CC /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
 		B6E6F53124D04E7400CF4BC8 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		B6E6F53424D064E800CF4BC8 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		B6E6F53624D0692700CF4BC8 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				B6E6F53124D04E7400CF4BC8 /* ChatMessage.swift */,
+				B6E6F53624D0692700CF4BC8 /* KeyboardResponder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				45A1E47E23487D920014E6CC /* ViewRouter.swift in Sources */,
 				45A1E48423487E1D0014E6CC /* ChatScreen.swift in Sources */,
 				45A1E48023487DF90014E6CC /* MotherView.swift in Sources */,
+				B6E6F53724D0692700CF4BC8 /* KeyboardResponder.swift in Sources */,
 				45A1E44C23487D030014E6CC /* AppDelegate.swift in Sources */,
 				45A1E47C23487D2F0014E6CC /* LoginScreen.swift in Sources */,
 				45A1E44E23487D030014E6CC /* SceneDelegate.swift in Sources */,
