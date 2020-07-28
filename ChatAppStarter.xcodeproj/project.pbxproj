@@ -18,6 +18,7 @@
 		45A1E47E23487D920014E6CC /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1E47D23487D920014E6CC /* ViewRouter.swift */; };
 		45A1E48023487DF90014E6CC /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1E47F23487DF90014E6CC /* MotherView.swift */; };
 		45A1E48423487E1D0014E6CC /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1E48323487E1D0014E6CC /* ChatScreen.swift */; };
+		B6E6F53224D04E7400CF4BC8 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E6F53124D04E7400CF4BC8 /* ChatMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		45A1E47D23487D920014E6CC /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		45A1E47F23487DF90014E6CC /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		45A1E48323487E1D0014E6CC /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		B6E6F53124D04E7400CF4BC8 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +107,10 @@
 		45A1E44A23487D030014E6CC /* ChatAppStarter */ = {
 			isa = PBXGroup;
 			children = (
-				45A1E44B23487D030014E6CC /* AppDelegate.swift */,
-				45A1E44D23487D030014E6CC /* SceneDelegate.swift */,
+				B6E6F52F24D04E4A00CF4BC8 /* Resources */,
 				45A1E48523487E2E0014E6CC /* View Router */,
-				45A1E48323487E1D0014E6CC /* ChatScreen.swift */,
-				45A1E47B23487D2F0014E6CC /* LoginScreen.swift */,
-				45A1E45123487D040014E6CC /* Assets.xcassets */,
-				45A1E45623487D040014E6CC /* LaunchScreen.storyboard */,
-				45A1E45923487D040014E6CC /* Info.plist */,
+				B6E6F53324D04E7C00CF4BC8 /* Model */,
+				B6E6F53024D04E6200CF4BC8 /* Views */,
 				45A1E45323487D040014E6CC /* Preview Content */,
 			);
 			path = ChatAppStarter;
@@ -151,6 +149,35 @@
 				45A1E47F23487DF90014E6CC /* MotherView.swift */,
 			);
 			path = "View Router";
+			sourceTree = "<group>";
+		};
+		B6E6F52F24D04E4A00CF4BC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45A1E44B23487D030014E6CC /* AppDelegate.swift */,
+				45A1E44D23487D030014E6CC /* SceneDelegate.swift */,
+				45A1E45123487D040014E6CC /* Assets.xcassets */,
+				45A1E45623487D040014E6CC /* LaunchScreen.storyboard */,
+				45A1E45923487D040014E6CC /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6E6F53024D04E6200CF4BC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45A1E48323487E1D0014E6CC /* ChatScreen.swift */,
+				45A1E47B23487D2F0014E6CC /* LoginScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6E6F53324D04E7C00CF4BC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6F53124D04E7400CF4BC8 /* ChatMessage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E6F53224D04E7400CF4BC8 /* ChatMessage.swift in Sources */,
 				45A1E47E23487D920014E6CC /* ViewRouter.swift in Sources */,
 				45A1E48423487E1D0014E6CC /* ChatScreen.swift in Sources */,
 				45A1E48023487DF90014E6CC /* MotherView.swift in Sources */,
@@ -458,7 +486,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatAppStarter/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Q99Q7248;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ChatAppStarter/Info.plist;
+				INFOPLIST_FILE = ChatAppStarter/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +506,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatAppStarter/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Q99Q7248;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ChatAppStarter/Info.plist;
+				INFOPLIST_FILE = ChatAppStarter/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
